@@ -5,7 +5,7 @@ var qs = require('querystring')
 
 exports.handler = async (event) => {
   var body = qs.parse(event.body)
-  var user = body.user_name || 'Unknown'
+  var user = body.user_name || body.user_id || 'Unknown'
   var response_url = body.response_url
   var response = {
     isBase64Encoded: false, // Set to `true` for binary support.
@@ -31,7 +31,7 @@ exports.handler = async (event) => {
             // "thumb_url": "https://media.licdn.com/dms/image/C4E03AQElGxCqxRuWmQ/profile-displayphoto-shrink_200_200/0?e=1547078400&v=beta&t=XkeKccrZRg0HUHL1psIUs4O6v2Rjf-XJdxJrAl5z4Ms",
             // "footer": "Holidays Bot!",
             // "footer_icon": "https://platform.slack-edge.com/img/default_application_icon.png",
-            "ts": (new Date).getTime()
+            "ts": Math.floor((new Date).getTime()/1000)
         }
     ]
   }
