@@ -1,0 +1,32 @@
+{
+  "name": "holidays_delayed",
+  "version": "1.0.0",
+  "description": "a simple slack bot that returns a list of holidays",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3-dots/slack_bot_holidays.git"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "holidays",
+    "slack",
+    "app",
+    "slack",
+    "bot"
+  ],
+  "author": "mim Armand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3-dots/slack_bot_holidays/issues"
+  },
+  "homepage": "https://github.com/3-dots/slack_bot_holidays#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "request": "^2.88.0"
+  }
+}

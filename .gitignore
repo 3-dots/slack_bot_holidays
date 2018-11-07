@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+#Mac BS:
+.DS_Store
+
+*.zip
